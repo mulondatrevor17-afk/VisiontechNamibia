@@ -1,0 +1,67 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "quotes": {
+      "title": "Project Quotes",
+      "description": "Saved project quote estimates",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userName": { "type": "string" },
+        "serviceType": { "type": "string" },
+        "budget": { "type": "string" },
+        "timeline": { "type": "string" },
+        "selectedAddons": { "type": "array", "items": { "type": "string" } },
+        "totalEstimate": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "serviceType", "totalEstimate"]
+    },
+    "saved_locations": {
+      "title": "Saved Locations",
+      "description": "User saved locations and place bookmarks",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "category": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "name", "lat", "lng"]
+    },
+    "saved_routes": {
+      "title": "Saved Routes",
+      "description": "User saved routes and directions",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "origin": { "type": "string" },
+        "destination": { "type": "string" },
+        "distance": { "type": "string" },
+        "duration": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "origin", "destination"]
+    }
+  }
+}

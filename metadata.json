@@ -1,0 +1,13 @@
+{
+  "name": "visiontechna",
+  "description": "VisionTech Namibia — modern web design, development, and digital solutions.",
+  "openGraph": {
+    "title": "visiontechna",
+    "description": "VisionTech Namibia — modern web design, development, and digital solutions.",
+    "image": "/images/og-image.png",
+    "type": "website",
+    "url": "https://visiontechna.online/"
+  },
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
